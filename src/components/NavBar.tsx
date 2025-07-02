@@ -18,7 +18,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { SidebarTrigger } from "./ui/sidebar";
 
-const NavBar = () => {
+const Navbar = () => {
   const { data: authUser } = useGetAuthUserQuery();
   const router = useRouter();
   const pathname = usePathname();
@@ -70,7 +70,7 @@ const NavBar = () => {
               onClick={() =>
                 router.push(
                   authUser.userRole?.toLowerCase() === "manager"
-                    ? "/managers/newproperty"
+                    ? "/managers/newProperty"
                     : "/search"
                 )
               }
@@ -187,4 +187,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

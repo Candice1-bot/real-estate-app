@@ -46,7 +46,7 @@ const Map = () => {
   if (isLoading) return <>Loading...</>;
   if (isError || !properties) {
     console.log(error);
-    return <div>Failed to fetch propertiesllalal</div>;
+    return <div>Failed to fetch properties</div>;
   }
 
   return (

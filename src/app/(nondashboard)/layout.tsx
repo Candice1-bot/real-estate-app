@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Navbar";
 import { NAVBAR_HEIGHT } from "@/lib/constants";
 import { useGetAuthUserQuery } from "@/state/api";
 import { usePathname, useRouter } from "next/navigation";
